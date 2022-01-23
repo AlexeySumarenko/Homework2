@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Операторы ветвлений и условий в JavaScript</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <script>
+    let a = prompt('Введите значение переменной а');
+    if (a =='')
+    {
+        alert('Значение переменной а не введено!')
+    }
+    let b = prompt('Введите число b');
+    if (b =='')
+    {
+        alert('Значение переменной b не введено!')
+    }
+
+    else if (a == '' || b == '') 
+    {
+        result = 'Вы не ввели одну из переменный, или обе переменные';
+    }
+    else result = (a === b) ? 'Значения равны' : 'Значения не равны';
+    alert(result);
+  </script>
+</body>
+</html>
