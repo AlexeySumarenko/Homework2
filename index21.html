@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Операторы ветвлений и условий в JavaScript</title>
+ 
+<body>
+  <script>
+    let a = prompt('Введите значение переменной а');
+    let b = prompt('Введите значение переменной b');
+    let c = prompt('Введите значение переменной с');
+    if (a == '' || b == '' || c == '') 
+    {
+        alert('Вы не ввели переменные');
+    }
+    else if (a==0 || b==0 || c == 0)
+    {
+        alert('Такого треугольника не существует');
+    }
+    else result = ((a*a+b*b)==c*c) ? 'Ура: угадали длины сторон треугольника' : 'Надо учить теорему';
+    alert(result);
+  </script>
+</body>
+</html>
