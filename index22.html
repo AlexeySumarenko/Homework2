@@ -14,12 +14,11 @@
     {
         alert('Вы не ввели переменные');
     }
-    if (isNaN(a) && isNaN(b))
+    else if (isNaN(a) && isNaN(b))
     {
     result= (a + a == b) ? 'Значения равны' : 'Значения не равны';
-    alert(result);
     }
-    else result = (+a + +a === +b) ? 'Значения равны' : 'Значения не равны';
+    else result = (+a + +a == +b) ? 'Значения равны' : 'Значения не равны';
     alert(result);
   </script>
 </body>
